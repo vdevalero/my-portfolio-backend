@@ -61,9 +61,9 @@ CREATE TABLE user (
 );
 INSERT INTO user (name, email, password, role)
 VALUES (
-        "vvalero44",
-        "vvalero44@gmail.com",
-        "prrueba1234",
+        "admin",
+        "admin@gmail.com",
+        "prueba1234",
         1
     );
 INSERT INTO user (name, email, password, role)
