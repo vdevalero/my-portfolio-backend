@@ -30,7 +30,7 @@ export const getOneTechnologie = async (req, res) => {
 export const getOneProximTechnologie = async (req, res) => {
   try {
     const [rows] = await pool.query(
-      "SELECT * FROM Proxim_Technology WHERE id = ?",
+      "SELECT * FROM proxim_technology WHERE id = ?",
       [req.params.id]
     );
     res.json(rows[0]);
