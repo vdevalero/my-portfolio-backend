@@ -16,7 +16,7 @@ export const postProximTechnology = async (req, res) => {
 export const patchProximTechnology = async (req, res) => {
   try {
     const [rows] = await pool.query(
-      "UPDATE Proxim_Technology SET name= IFNULL(?,name), image= IFNULL(?,image) WHERE ID = ?",
+      "UPDATE proxim_technology SET name= IFNULL(?,name), image= IFNULL(?,image) WHERE ID = ?",
       [req.body.name, req.body.image, req.params.id]
     );
     res.json(rows);
