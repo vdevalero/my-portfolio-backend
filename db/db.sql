@@ -3,7 +3,7 @@ create database portfolio;
 use portfolio;
 --1
 --Tabla de proximas tecnologias
-CREATE TABLE Proxim_Technology (
+CREATE TABLE proxim_Technology (
     id int auto_increment not null,
     name varchar(255) not null,
     image varchar(255) not null,
@@ -23,7 +23,7 @@ CREATE TABLE state_project (
     id int auto_increment not null primary key,
     name varchar(50) not null,
     border_color varchar(55) not null,
-    background_color varchar(55) not null,
+    background_color varchar(55) not null
 );
 --4
 --TABLE role
@@ -68,9 +68,9 @@ VALUES (
     );
 INSERT INTO user (name, email, password, role)
 VALUES (
-        "invitado",
+        "Invitado",
         "invitado@invitado.com",
-        "innvitado",
+        "invitado",
         2
     );
 --

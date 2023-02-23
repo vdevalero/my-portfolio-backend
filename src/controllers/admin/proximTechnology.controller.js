@@ -3,7 +3,7 @@ import { pool } from "../../db.js";
 export const postProximTechnology = async (req, res) => {
   try {
     const [rows] = await pool.query(
-      "INSERT INTO Proxim_Technology (name, image) VALUES (?, ?)",
+      "INSERT INTO proxim_technology (name, image) VALUES (?, ?)",
       [req.body.name, req.body.image]
     );
     res.json(rows);
