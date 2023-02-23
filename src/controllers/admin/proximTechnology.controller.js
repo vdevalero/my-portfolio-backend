@@ -29,7 +29,7 @@ export const patchProximTechnology = async (req, res) => {
 export const deleteProximTechnology = async (req, res) => {
   try {
     const [rows] = await pool.query(
-      "DELETE FROM Proxim_Technology WHERE id = ?",
+      "DELETE FROM proxim_technology WHERE id = ?",
       [req.params.id]
     );
     res.json(rows);
